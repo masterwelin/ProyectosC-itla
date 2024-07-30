@@ -52,7 +52,7 @@ namespace ProgramacionSecuencialTarea1.Tarea1
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+                Console.WriteLine($"ocurrio el siguiente error {ex.Message}");
             }
 
         }
