@@ -13,12 +13,12 @@ namespace ProgramacionSecuencialTarea1.Tarea1
         public void Calcular()
         {
             //declarar las variables
-            int num1 = 0;
-            int num2 = 0;
-            int num3 = 0;
-            int num4 = 0;
-            int suma = 0;
-            double promedio = 0;
+            decimal num1 = 0;
+            decimal num2 = 0;
+            decimal num3 = 0;
+            decimal num4 = 0;
+            decimal suma = 0;
+            decimal promedio = 0;
 
             string linea = string.Empty;
 
@@ -29,7 +29,7 @@ namespace ProgramacionSecuencialTarea1.Tarea1
                 Console.WriteLine("Ingrese el valor de número 1:");
                 linea = Console.ReadLine();
 
-                if (!int.TryParse(linea, out num1))
+                if (!decimal.TryParse(linea, out num1))
                 {
                     Console.WriteLine("El num 1 es invalido.");
                     return;
@@ -38,7 +38,7 @@ namespace ProgramacionSecuencialTarea1.Tarea1
                 Console.WriteLine("Ingrese el valor del número 2:");
                 linea = Console.ReadLine();
 
-                if (!int.TryParse(linea, out num2))
+                if (!decimal.TryParse(linea, out num2))
                 {
                     Console.WriteLine("El num 2 es invalido.");
                     return;
@@ -47,7 +47,7 @@ namespace ProgramacionSecuencialTarea1.Tarea1
                 Console.WriteLine("Ingrese el valor del número 3:");
                 linea = Console.ReadLine();
 
-                if (!int.TryParse(linea, out num3))
+                if (!decimal.TryParse(linea, out num3))
                 {
                     Console.WriteLine("El num 3 es invalido.");
                     return;
@@ -56,7 +56,7 @@ namespace ProgramacionSecuencialTarea1.Tarea1
                 Console.WriteLine("Ingrese el valor del número 4:");
                 linea = Console.ReadLine();
 
-                if (!int.TryParse(linea, out num4))
+                if (!decimal.TryParse(linea, out num4))
                 {
                     Console.WriteLine("El num 4 es invalido.");
                     return;
