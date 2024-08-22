@@ -9,9 +9,9 @@
 
         public void Calcular() 
         
-        { 
-        
+        {
 
+            int numero = 5;
 
         }
 

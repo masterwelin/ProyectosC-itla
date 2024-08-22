@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using PracticaProgramaciónBuclesWhile;
+
+Tarea2PiezasPerfilesAptos calcularPromedio = new Tarea2PiezasPerfilesAptos();
+
+calcularPromedio.CalcularPerfiles();

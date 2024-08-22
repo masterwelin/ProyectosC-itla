@@ -7,6 +7,6 @@
     /// </summary>
     internal class Tarea1SumaPromedioDiezNumeros
     {
-
+        int num = 5;
     }
 }

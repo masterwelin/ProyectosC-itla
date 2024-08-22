@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using PracticaProgramacionBuclesFor;
+
+Tarea2ConjuntoDiezNumeros tarea2ConjuntoDiezNumeros = new Tarea2ConjuntoDiezNumeros();
+
+tarea2ConjuntoDiezNumeros.Calcular();
