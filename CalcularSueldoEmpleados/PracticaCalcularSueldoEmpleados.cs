@@ -46,7 +46,7 @@
 
             }
 
-            Console.WriteLine($"Los empleados de su empresa que tienen un sueldo entre $100 y $300 son: {cantEmplCat1}, \n los empleados que tienen un sueldo mayor a $300 son: {cantEmplCat2} y \n el importe que gasta su empresa en sueldo de personal es {sumaSueldos} ");
+            Console.WriteLine($"Los empleados de su empresa que tienen un sueldo entre $100 y $300 son: {cantEmplCat1}, \n los empleados que tienen un sueldo mayor a $300 son: {cantEmplCat2} y \n el importe que gasta su empresa en sueldo de personal es ${sumaSueldos} ");
 
             Console.ReadLine();
         }
