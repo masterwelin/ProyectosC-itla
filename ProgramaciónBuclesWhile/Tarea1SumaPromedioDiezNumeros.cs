@@ -7,6 +7,34 @@
     /// </summary>
     internal class Tarea1SumaPromedioDiezNumeros
     {
-        int num = 5;
+        public void Calcular()
+        {
+
+            decimal suma = 0;
+            decimal promedio = 0;
+            int index = 1;
+
+            Console.WriteLine("Digite 10 numeros para realizar su suma y promedio: ");
+            
+            //cantidad = Convert.ToInt32(Console.ReadLine());
+
+            while (index <= 10)
+            {
+                Console.WriteLine($"Digite el numero {index}: ");
+
+                suma += Convert.ToInt32(Console.ReadLine());
+
+                ++index;
+
+            }
+
+            promedio = (suma / Convert.ToDecimal(index)); 
+
+            Console.WriteLine($"La suma de las cantidades digitadas es: {suma} y el promedio es: {promedio}");
+
+            Console.ReadLine();
+
+
+        }
     }
 }

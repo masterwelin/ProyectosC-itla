@@ -6,6 +6,33 @@
     /// </summary>
     internal class Tarea3SumaDiezNumeros
     {
-        int num = 5;
+        public void Calcular()
+        {
+
+            int numero = 0;
+            int sumaUltimos5Numeros = 0;
+
+            Console.WriteLine("Digite 10 numeros");
+
+            for (int i = 1; i < 11; i++)
+            {
+
+                Console.WriteLine($"Digite numero {i}:");
+
+                numero = Convert.ToInt32(Console.ReadLine());
+
+                if (i >= 5)
+                {
+                    sumaUltimos5Numeros += numero;
+                }
+
+            }
+
+            Console.WriteLine($"La suma de los ultimos 5 numeros introducidos es: {sumaUltimos5Numeros}");
+
+            Console.ReadLine();
+
+
+        }
     }
 }
