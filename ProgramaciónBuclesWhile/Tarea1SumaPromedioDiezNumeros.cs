@@ -1,4 +1,6 @@
-﻿namespace PracticaProgramaciónBuclesWhile
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace PracticaProgramaciónBuclesWhile
 {
     /// <summary>
     ///  1) Confeccionar un programa que, 
@@ -25,10 +27,9 @@
                 suma += Convert.ToInt32(Console.ReadLine());
 
                 ++index;
-
             }
 
-            promedio = (suma / Convert.ToDecimal(index)); 
+            promedio = Math.Round((suma / Convert.ToDecimal(index)),2); 
 
             Console.WriteLine($"La suma de las cantidades digitadas es: {suma} y el promedio es: {promedio}");
 
