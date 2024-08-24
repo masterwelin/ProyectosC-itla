@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaProgramaciónBucles
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularSueldoEmpleados", "CalcularSueldoEmpleados\CalcularSueldoEmpleados.csproj", "{0240A351-F304-4785-8758-577C0F6B800B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularTriangulo", "CalcularTriangulo\CalcularTriangulo.csproj", "{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{0240A351-F304-4785-8758-577C0F6B800B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0240A351-F304-4785-8758-577C0F6B800B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0240A351-F304-4785-8758-577C0F6B800B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
