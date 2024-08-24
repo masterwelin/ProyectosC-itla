@@ -27,6 +27,7 @@ namespace CalcularTriangulo
 
             Console.WriteLine("Digite la cantidad de triángulos que desea procesar:");
             cantidadTriangulos = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n");
 
             while (index <= cantidadTriangulos)
             {
