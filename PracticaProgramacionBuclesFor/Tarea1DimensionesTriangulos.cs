@@ -10,9 +10,14 @@
         public void Calcular() 
         
         {
-
-            int numero = 5;
-
+            try
+            {
+                int numero = 5;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+            }
         }
 
     }

@@ -14,24 +14,30 @@
 
             Console.WriteLine("Digite 10 numeros");
 
-            for (int i = 1; i < 11; i++)
+            try
             {
-
-                Console.WriteLine($"Digite numero {i}:");
-
-                numero = Convert.ToInt32(Console.ReadLine());
-
-                if (i >= 5)
+                for (int i = 1; i < 11; i++)
                 {
-                    sumaUltimos5Numeros += numero;
+
+                    Console.WriteLine($"Digite numero {i}:");
+
+                    numero = Convert.ToInt32(Console.ReadLine());
+
+                    if (i >= 5)
+                    {
+                        sumaUltimos5Numeros += numero;
+                    }
+
                 }
 
+                Console.WriteLine($"La suma de los ultimos 5 numeros introducidos es: {sumaUltimos5Numeros}");
+
+                Console.ReadLine();
             }
-
-            Console.WriteLine($"La suma de los ultimos 5 numeros introducidos es: {sumaUltimos5Numeros}");
-
-            Console.ReadLine();
-
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+            }
 
         }
     }

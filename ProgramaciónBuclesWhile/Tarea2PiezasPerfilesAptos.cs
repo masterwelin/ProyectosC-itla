@@ -23,35 +23,42 @@
 
             Console.WriteLine("Digite la cantidad que piezas que desea procesar: ");
 
-            cantidad = Convert.ToInt32(Console.ReadLine());
-
-            while (index <= cantidad)
+            try
             {
-                Console.WriteLine($"Digite el perfil de longitud de la pieza {index}: ");
-                longitud = Convert.ToDouble(Console.ReadLine());
+                cantidad = Convert.ToInt32(Console.ReadLine());
 
-                if (longitud >= minimo && longitud <= maximo)
+                while (index <= cantidad)
                 {
-                    ++piezasAptas;
+                    Console.WriteLine($"Digite el perfil de longitud de la pieza {index}: ");
+                    longitud = Convert.ToDouble(Console.ReadLine());
 
-                    if (index == 1)
+                    if (longitud >= minimo && longitud <= maximo)
                     {
-                        valoresAptos += $"pieza({index}): " + Convert.ToString(longitud);
+                        ++piezasAptas;
+
+                        if (index == 1)
+                        {
+                            valoresAptos += $"pieza({index}): " + Convert.ToString(longitud);
+                        }
+                        else
+                        {
+                            valoresAptos += $", pieza({index}) " + Convert.ToString(longitud);
+                        }
                     }
-                    else
-                    {
-                        valoresAptos += $", pieza({index}) " + Convert.ToString(longitud);
-                    }
+
+                    ++index;
+
                 }
 
-                ++index;
+                Console.WriteLine($"La cantidad de piezas evaluadas es: {cantidad} y la cantidad de piezas aptas es: {piezasAptas} y los valores aptos son: {valoresAptos}");
+
+                Console.ReadLine();
 
             }
-
-            Console.WriteLine($"La cantidad de piezas evaluadas es: {cantidad} y la cantidad de piezas aptas es: {piezasAptas} y los valores aptos son: {valoresAptos}");
-
-            Console.ReadLine();
-
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+            }
 
         }
     }

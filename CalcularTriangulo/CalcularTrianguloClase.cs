@@ -25,36 +25,43 @@ namespace CalcularTriangulo
             int limite = 12;
             int cantidadTriangulosAptos = 0;
 
-            Console.WriteLine("Digite la cantidad de triángulos que desea procesar:");
-            cantidadTriangulos = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\n");
-
-            while (index <= cantidadTriangulos)
+            try
             {
-                ///la formula para calcular triangulos es area = (base * altura)/2
-                ///sabiendo la base y la altura solo hay que realizar la formula
 
-                Console.WriteLine($"Digite la base del triángulo {index}:");
-                vBase = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("Digite la cantidad de triángulos que desea procesar:");
+                cantidadTriangulos = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("\n");
 
-                Console.WriteLine($"Digite la altura del triángulo {index}:");
-                vAltura = Convert.ToDecimal(Console.ReadLine());
-
-                AreaTriangulo = (vBase * vAltura) / 2;
-
-                if (AreaTriangulo > limite)
+                while (index <= cantidadTriangulos)
                 {
-                    resultado += $"El area del triángulo ({index}) es: {AreaTriangulo}\n";
-                    ++cantidadTriangulosAptos;
+                    ///la formula para calcular triangulos es area = (base * altura)/2
+                    ///sabiendo la base y la altura solo hay que realizar la formula
+
+                    Console.WriteLine($"Digite la base del triángulo {index}:");
+                    vBase = Convert.ToDecimal(Console.ReadLine());
+
+                    Console.WriteLine($"Digite la altura del triángulo {index}:");
+                    vAltura = Convert.ToDecimal(Console.ReadLine());
+
+                    AreaTriangulo = (vBase * vAltura) / 2;
+
+                    if (AreaTriangulo > limite)
+                    {
+                        resultado += $"El area del triángulo ({index}) es: {AreaTriangulo}\n";
+                        ++cantidadTriangulosAptos;
+                    }
+
+                    triangulos += $"Los valores del triángulo {index} son > Base {vBase}, Altura {vAltura} y Area {AreaTriangulo}.\n";
+
+                    ++index;
                 }
-
-                triangulos += $"Los valores del triángulo {index} son > Base {vBase}, Altura {vAltura} y Area {AreaTriangulo}.\n";
-
-                ++index;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
             Console.WriteLine($"\nLos triángulos digitados fueron los siguientes:\n{triangulos}");
-            //Console.WriteLine("\n");
 
             if (cantidadTriangulosAptos == 0)
             {

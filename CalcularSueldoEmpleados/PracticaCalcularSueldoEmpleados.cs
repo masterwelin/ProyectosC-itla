@@ -22,33 +22,41 @@
 
             Console.WriteLine("Digite la cantidad de empleados que laboran en su empresa: ");
 
-            cantidadEmpleados = Convert.ToInt32(Console.ReadLine());
-
-            while (index <= cantidadEmpleados)
+            try
             {
-                Console.WriteLine($"Digite el sueldo que gana el empleado {index}:");
+                cantidadEmpleados = Convert.ToInt32(Console.ReadLine());
 
-                sueldoEmpleado = Convert.ToInt32(Console.ReadLine());
-
-                if (sueldoEmpleado >= 100 && sueldoEmpleado <= 300)
+                while (index <= cantidadEmpleados)
                 {
-                    ++cantEmplCat1;
+                    Console.WriteLine($"Digite el sueldo que gana el empleado {index}:");
+
+                    sueldoEmpleado = Convert.ToInt32(Console.ReadLine());
+
+                    if (sueldoEmpleado >= 100 && sueldoEmpleado <= 300)
+                    {
+                        ++cantEmplCat1;
+                    }
+
+                    if (sueldoEmpleado > 300)
+                    {
+                        ++cantEmplCat2;
+                    }
+
+                    sumaSueldos += sueldoEmpleado;
+
+                    ++index;
+
                 }
 
-                if (sueldoEmpleado > 300)
-                {
-                    ++cantEmplCat2;
-                }
+                Console.WriteLine($"Los empleados de su empresa que tienen un sueldo entre $100 y $300 son: {cantEmplCat1}, \n los empleados que tienen un sueldo mayor a $300 son: {cantEmplCat2} y \n el importe que gasta su empresa en sueldo de personal es ${sumaSueldos} ");
 
-                sumaSueldos += sueldoEmpleado;
-
-                ++index;
-
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
-            Console.WriteLine($"Los empleados de su empresa que tienen un sueldo entre $100 y $300 son: {cantEmplCat1}, \n los empleados que tienen un sueldo mayor a $300 son: {cantEmplCat2} y \n el importe que gasta su empresa en sueldo de personal es ${sumaSueldos} ");
-
-            Console.ReadLine();
         }
     }
 }

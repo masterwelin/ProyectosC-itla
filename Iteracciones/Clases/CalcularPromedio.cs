@@ -13,19 +13,27 @@ namespace Iteracciones.Clases
 
             Console.WriteLine("Digite la cantidad que desea calcular: ");
 
-            cantidad = Convert.ToDecimal(Console.ReadLine());
-
-            for (int i = 1; i <= cantidad; i++)
+            try
             {
-                Console.WriteLine("Digite el valor a calcular: ");
-                valor = Convert.ToDecimal(Console.ReadLine());
+                cantidad = Convert.ToDecimal(Console.ReadLine());
 
-                suma = suma + valor;
+                for (int i = 1; i <= cantidad; i++)
+                {
+                    Console.WriteLine("Digite el valor a calcular: ");
+                    valor = Convert.ToDecimal(Console.ReadLine());
+
+                    suma = suma + valor;
+                }
+
+                promedio = (suma / cantidad);
+
+                Console.WriteLine($"La suma es: {suma} y el promedio es: {promedio}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
-            promedio = (suma / cantidad);
-
-            Console.WriteLine($"La suma es: { suma } y el promedio es: { promedio }");
         }
 
         public void CalcularNotas() {
@@ -35,23 +43,30 @@ namespace Iteracciones.Clases
             int cantidad = 0;
             int calificacion = 0;
 
-            for (int i = 1; i <= cantidad; i++)
+            try
             {
-                Console.WriteLine($"Ingrese la calificacion { i }");
-                calificacion = Convert.ToInt32(Console.ReadLine());
-                if (calificacion >= 7)
+                for (int i = 1; i <= cantidad; i++)
                 {
-                    aprobado = aprobado + 1;
-                }
-                else
-                {
-                    reprobado = reprobado + 1;
+                    Console.WriteLine($"Ingrese la calificacion {i}");
+                    calificacion = Convert.ToInt32(Console.ReadLine());
+                    if (calificacion >= 7)
+                    {
+                        aprobado = aprobado + 1;
+                    }
+                    else
+                    {
+                        reprobado = reprobado + 1;
+                    }
+
                 }
 
+                Console.WriteLine($"Aprobados: {aprobado} y reprobados {reprobado}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
-            Console.WriteLine($"Aprobados: { aprobado } y reprobados { reprobado }");
-        
         }
 
         public void CalcularPromedioWhile() {
@@ -64,11 +79,19 @@ namespace Iteracciones.Clases
 
 
             Console.WriteLine("Digite la cantidad que desea calcular:");
-            cantidad = Convert.ToInt32(Console.ReadLine());
 
-            while (index <= cantidad)
+            try
             {
-                Console.WriteLine("");
+                cantidad = Convert.ToInt32(Console.ReadLine());
+
+                while (index <= cantidad)
+                {
+                    Console.WriteLine("");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
         }
@@ -83,43 +106,45 @@ namespace Iteracciones.Clases
             int index = 1;
             string valoresAptos = "";
             
-
-
-
             Console.WriteLine("Digite la cantidad que piezas que desea procesar: ");
 
-            cantidad = Convert.ToInt32(Console.ReadLine());
-
-            while (index <= cantidad )
+            try
             {
-                Console.WriteLine($"Digite el perfil de longitud de la pieza { index }: ");
-                longitud = Convert.ToDouble(Console.ReadLine());
+                cantidad = Convert.ToInt32(Console.ReadLine());
 
-                if (longitud >= minimo && longitud <= maximo)
+                while (index <= cantidad)
                 {
-                    ++piezasAptas;
+                    Console.WriteLine($"Digite el perfil de longitud de la pieza {index}: ");
+                    longitud = Convert.ToDouble(Console.ReadLine());
 
-                    if (index == 1)
+                    if (longitud >= minimo && longitud <= maximo)
                     {
-                        valoresAptos += $"pieza({index}): "+ Convert.ToString(longitud);
+                        ++piezasAptas;
+
+                        if (index == 1)
+                        {
+                            valoresAptos += $"pieza({index}): " + Convert.ToString(longitud);
+                        }
+                        else
+                        {
+                            valoresAptos += $", pieza({index}) " + Convert.ToString(longitud);
+                        }
                     }
-                    else {
-                        valoresAptos += $", pieza({index}) "+ Convert.ToString(longitud);
-                    }
+
+                    ++index;
+
                 }
 
-                ++index;
+                Console.WriteLine($"La cantidad de piezas evaluadas es: {cantidad} y la cantidad de piezas aptas es: {piezasAptas} y los valores aptos son: {valoresAptos}");
 
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
             }
 
-            Console.WriteLine($"La cantidad de piezas evaluadas es: {cantidad} y la cantidad de piezas aptas es: {piezasAptas} y los valores aptos son: {valoresAptos}");
-            
-            Console.ReadLine();
-
-
         }
-
-
 
     }
 }

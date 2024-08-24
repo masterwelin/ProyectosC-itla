@@ -17,29 +17,36 @@ namespace PracticaProgramacionBuclesFor
 
             Console.WriteLine("Digite 10 numeros para validar cuales son divisilbes por 3 y por 5");
 
-            for (int i = 1; i < 11; i++)
+            try
             {
-
-                Console.WriteLine($"Digite numero {i}:");
-
-                numero = Convert.ToInt32(Console.ReadLine());
-
-                if ((numero % 3) == 0)
+                for (int i = 1; i < 11; i++)
                 {
-                    ++numerosDivisiblesPor3;
+
+                    Console.WriteLine($"Digite numero {i}:");
+
+                    numero = Convert.ToInt32(Console.ReadLine());
+
+                    if ((numero % 3) == 0)
+                    {
+                        ++numerosDivisiblesPor3;
+                    }
+
+                    if ((numero % 5) == 0)
+                    {
+                        ++numerosDivisiblesPor5;
+                    }
+
                 }
 
-                if ((numero % 5) == 0)
-                {
-                    ++numerosDivisiblesPor5;
-                }
+                Console.WriteLine($"La cantidad de numeros divisibles por 3 es: {numerosDivisiblesPor3} y la cantidad de numeros divisibles por 5 es: {numerosDivisiblesPor5}");
 
+                Console.ReadLine();
             }
 
-            Console.WriteLine($"La cantidad de numeros divisibles por 3 es: {numerosDivisiblesPor3} y la cantidad de numeros divisibles por 5 es: {numerosDivisiblesPor5}");
-
-            Console.ReadLine();
-
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+            }
 
         }
     }

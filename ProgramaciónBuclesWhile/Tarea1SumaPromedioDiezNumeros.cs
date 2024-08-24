@@ -17,24 +17,30 @@ namespace PracticaProgramaciónBuclesWhile
             int index = 1;
 
             Console.WriteLine("Digite 10 numeros para realizar su suma y promedio: ");
-            
+
             //cantidad = Convert.ToInt32(Console.ReadLine());
 
-            while (index <= 10)
+            try
             {
-                Console.WriteLine($"Digite el numero {index}: ");
+                while (index <= 10)
+                {
+                    Console.WriteLine($"Digite el numero {index}: ");
 
-                suma += Convert.ToInt32(Console.ReadLine());
+                    suma += Convert.ToInt32(Console.ReadLine());
 
-                ++index;
+                    ++index;
+                }
+
+                promedio = Math.Round((suma / Convert.ToDecimal(index)), 2);
+
+                Console.WriteLine($"La suma de las cantidades digitadas es: {suma} y el promedio es: {promedio}");
+
+                Console.ReadLine();
             }
-
-            promedio = Math.Round((suma / Convert.ToDecimal(index)),2); 
-
-            Console.WriteLine($"La suma de las cantidades digitadas es: {suma} y el promedio es: {promedio}");
-
-            Console.ReadLine();
-
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ocurrio el siguiente error{ex.Message}");
+            }
 
         }
     }
