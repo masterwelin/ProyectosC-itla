@@ -9,17 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcularSueldo", "CalcularS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramacionSecuencialTarea1", "ProgramacionSecuencialTarea1\ProgramacionSecuencialTarea1.csproj", "{A434BF7B-313D-480F-AA45-9593DF78AB8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseProgramacionCondicional", "ClaseProgramacionCondicional\ClaseProgramacionCondicional.csproj", "{37F89350-F4B4-4B02-B6E3-FD6ABC8674EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaseProgramacionCondicional", "ClaseProgramacionCondicional\ClaseProgramacionCondicional.csproj", "{37F89350-F4B4-4B02-B6E3-FD6ABC8674EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iteracciones", "Iteracciones\Iteracciones.csproj", "{D49A7412-F021-4445-BC9C-058CB37C989B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iteracciones", "Iteracciones\Iteracciones.csproj", "{D49A7412-F021-4445-BC9C-058CB37C989B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaProgramacionBuclesFor", "PracticaProgramacionBuclesFor\PracticaProgramacionBuclesFor.csproj", "{514FF9F9-E1E0-4612-B3BF-9FE5A27B5C84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticaProgramacionBuclesFor", "PracticaProgramacionBuclesFor\PracticaProgramacionBuclesFor.csproj", "{514FF9F9-E1E0-4612-B3BF-9FE5A27B5C84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaProgramaciónBuclesWhile", "ProgramaciónBuclesWhile\PracticaProgramaciónBuclesWhile.csproj", "{810EBBF1-77D6-413D-813A-963FA5A99294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticaProgramaciónBuclesWhile", "ProgramaciónBuclesWhile\PracticaProgramaciónBuclesWhile.csproj", "{810EBBF1-77D6-413D-813A-963FA5A99294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularSueldoEmpleados", "CalcularSueldoEmpleados\CalcularSueldoEmpleados.csproj", "{0240A351-F304-4785-8758-577C0F6B800B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcularSueldoEmpleados", "CalcularSueldoEmpleados\CalcularSueldoEmpleados.csproj", "{0240A351-F304-4785-8758-577C0F6B800B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularTriangulo", "CalcularTriangulo\CalcularTriangulo.csproj", "{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcularTriangulo", "CalcularTriangulo\CalcularTriangulo.csproj", "{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaseArreglos", "ClaseArreglos\ClaseArreglos.csproj", "{21292E55-522F-401C-9BE0-59D0A4B5C841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaArreglos", "PracticaArreglos\PracticaArreglos.csproj", "{9E450F71-4D48-46FC-87E7-BD2BB309224B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2AA1B4-9EBA-441E-80E0-00CDF88362CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21292E55-522F-401C-9BE0-59D0A4B5C841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21292E55-522F-401C-9BE0-59D0A4B5C841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21292E55-522F-401C-9BE0-59D0A4B5C841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21292E55-522F-401C-9BE0-59D0A4B5C841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E450F71-4D48-46FC-87E7-BD2BB309224B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E450F71-4D48-46FC-87E7-BD2BB309224B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E450F71-4D48-46FC-87E7-BD2BB309224B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E450F71-4D48-46FC-87E7-BD2BB309224B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
