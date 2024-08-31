@@ -23,6 +23,7 @@ namespace PracticaArreglos.Practicas
                 int numeroMenor = 0;
                 int numero = 0;
                 int numerosRepetidos = 0;
+                int index = 0;
 
                 Console.WriteLine("Ingrese la cantidad de elementos que desea comparar:");
 
@@ -36,7 +37,23 @@ namespace PracticaArreglos.Practicas
 
                 int[] arrayNumeros = new int[cantidadNumeros];
 
-                for (int i = 0; i < arrayNumeros.Length; i++)
+                while (index < arrayNumeros.Length)
+                {
+                    Console.WriteLine($"Introduzca el numero {index + 1}:");
+                    linea = Console.ReadLine();
+
+                    if (!int.TryParse(linea, out numeroIntroducido))
+                    {
+                        Console.WriteLine("El numero introducido es invalido.");
+                        return;
+                    }
+
+                    arrayNumeros[index] = numeroIntroducido;
+
+                    ++index;
+                }
+
+                /*for (int i = 0; i < arrayNumeros.Length; i++)
                 {
                     Console.WriteLine($"Introduzca el numero {i + 1}");
                     linea = Console.ReadLine();
@@ -48,7 +65,7 @@ namespace PracticaArreglos.Practicas
                     }
 
                     arrayNumeros[i] = numeroIntroducido;
-                }
+                }*/
 
                 //verificar numero con menor valor
                 for (int i = 0; i < arrayNumeros.Length; i++)
