@@ -24,8 +24,12 @@
 //TirarDado tirarDado = new TirarDado();
 //TirarDado.Calcular();
 
-//Ejercicio 6
-EncuestaEstudiantil encuestaEstudiantil = new EncuestaEstudiantil();
-EncuestaEstudiantil.Calcular();
+//Ejercicio 7
+//EncuestaEstudiantil encuestaEstudiantil = new EncuestaEstudiantil();
+//EncuestaEstudiantil.Calcular();
+
+//Ejercicio 8
+PruebaForEach pruebaForEach = new PruebaForEach();
+PruebaForEach.EjecutarPrueba();
 
 
