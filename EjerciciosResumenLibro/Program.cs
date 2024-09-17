@@ -17,5 +17,15 @@
 //Fig85InicArreglo.Calcular();
 
 //Ejercicio 5
-Fig86InicArreglo fig86InicArreglo = new Fig86InicArreglo();
-Fig86InicArreglo.Calcular();
+//Fig86InicArreglo fig86InicArreglo = new Fig86InicArreglo();
+//Fig86InicArreglo.Calcular();
+
+//Ejercicio 6
+//TirarDado tirarDado = new TirarDado();
+//TirarDado.Calcular();
+
+//Ejercicio 6
+EncuestaEstudiantil encuestaEstudiantil = new EncuestaEstudiantil();
+EncuestaEstudiantil.Calcular();
+
+

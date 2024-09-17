@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayorEdad", "MayorEdad\Mayo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjerciciosResumenLibro", "EjerciciosResumenLibro\EjerciciosResumenLibro.csproj", "{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasoDeEstudioBarajaCartas", "CasoDeEstudioBarajaCartas\CasoDeEstudioBarajaCartas.csproj", "{D2522C03-11F8-4E52-A550-90A690FC2FDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseProgOrientadaObjetos", "ClaseProgOrientadaObjetos\ClaseProgOrientadaObjetos.csproj", "{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2522C03-11F8-4E52-A550-90A690FC2FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2522C03-11F8-4E52-A550-90A690FC2FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2522C03-11F8-4E52-A550-90A690FC2FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2522C03-11F8-4E52-A550-90A690FC2FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
