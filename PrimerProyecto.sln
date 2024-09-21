@@ -23,15 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcularTriangulo", "Calcul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaseArreglos", "ClaseArreglos\ClaseArreglos.csproj", "{21292E55-522F-401C-9BE0-59D0A4B5C841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaArreglos", "PracticaArreglos\PracticaArreglos.csproj", "{9E450F71-4D48-46FC-87E7-BD2BB309224B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticaArreglos", "PracticaArreglos\PracticaArreglos.csproj", "{9E450F71-4D48-46FC-87E7-BD2BB309224B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayorEdad", "MayorEdad\MayorEdad.csproj", "{9B7B2927-ABDC-4D81-9B49-A0BC33F83BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MayorEdad", "MayorEdad\MayorEdad.csproj", "{9B7B2927-ABDC-4D81-9B49-A0BC33F83BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjerciciosResumenLibro", "EjerciciosResumenLibro\EjerciciosResumenLibro.csproj", "{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjerciciosResumenLibro", "EjerciciosResumenLibro\EjerciciosResumenLibro.csproj", "{CC820803-351E-4FB5-9A4F-F68A9EF0AF0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasoDeEstudioBarajaCartas", "CasoDeEstudioBarajaCartas\CasoDeEstudioBarajaCartas.csproj", "{D2522C03-11F8-4E52-A550-90A690FC2FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasoDeEstudioBarajaCartas", "CasoDeEstudioBarajaCartas\CasoDeEstudioBarajaCartas.csproj", "{D2522C03-11F8-4E52-A550-90A690FC2FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaseProgOrientadaObjetos", "ClaseProgOrientadaObjetos\ClaseProgOrientadaObjetos.csproj", "{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaseProgOrientadaObjetos", "ClaseProgOrientadaObjetos\ClaseProgOrientadaObjetos.csproj", "{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjerciciosResumenCap4", "EjerciciosResumenCap4\EjerciciosResumenCap4.csproj", "{028C228A-D8A6-429E-94FD-F364029619A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A32A79-FE5D-4563-BAB6-BB7401DEBCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028C228A-D8A6-429E-94FD-F364029619A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028C228A-D8A6-429E-94FD-F364029619A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028C228A-D8A6-429E-94FD-F364029619A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028C228A-D8A6-429E-94FD-F364029619A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
