@@ -1,9 +1,12 @@
 ﻿using EjerciciosResumenCap4;
 
+
+//--------------
 //Ejemplo figura 4.2
 //// crea un objeto LibroCalificaciones y lo asigna a miLibroCalificaciones
 //LibroCalificaciones miLibroCalificaciones = new LibroCalificaciones();
 
+////----------
 //// llama al método MostrarMensaje de miLibroCalificaciones
 //miLibroCalificaciones.MostrarMensaje();
 
@@ -36,7 +39,14 @@ LibroCalificaciones47 libroCalificaciones47 = new LibroCalificaciones47();
 libroCalificaciones47.NombreCurso = "C# basico 2024";
 libroCalificaciones47.MostrarMensaje();
 
+//fin figura 4.7
 
+//inicio figura 4.8
+
+LibroCalificaciones48 libroCalificaciones48 = new LibroCalificaciones48();
+libroCalificaciones48.Ejecutar();
+
+//fin figura 4.8
 
 
 
