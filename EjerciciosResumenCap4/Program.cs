@@ -35,18 +35,25 @@
 
 //inicio Figura 4.7
 
-LibroCalificaciones47 libroCalificaciones47 = new LibroCalificaciones47();
-libroCalificaciones47.NombreCurso = "C# basico 2024";
-libroCalificaciones47.MostrarMensaje();
+//LibroCalificaciones47 libroCalificaciones47 = new LibroCalificaciones47();
+//libroCalificaciones47.NombreCurso = "C# basico 2024";
+//libroCalificaciones47.MostrarMensaje();
 
 //fin figura 4.7
 
 //inicio figura 4.8
 
-LibroCalificaciones48 libroCalificaciones48 = new LibroCalificaciones48();
-libroCalificaciones48.Ejecutar();
+//LibroCalificaciones48 libroCalificaciones48 = new LibroCalificaciones48();
+//libroCalificaciones48.Ejecutar();
 
 //fin figura 4.8
+
+//inicio figura 4.12
+
+LibroCalificaciones712 libroCalificaciones712 = new LibroCalificaciones712("Curso de C# basico 2024, probando el constructor");
+libroCalificaciones712.MostrarMensaje();
+
+//fin figura 4.12
 
 
 
