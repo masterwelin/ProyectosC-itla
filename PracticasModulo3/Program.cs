@@ -38,9 +38,9 @@ catch (Exception ex)
     Console.WriteLine($"ha ocurrido el siguiente error {ex}");
 }
 
-libro.MostrarInformacion();
+libro.MostrarInformacion(); //llamando el metodo MostrarInformacion
 
-if (libro.EsLargo() == true)
+if (libro.EsLargo() == true) //Aqui llamo el metodo es largo, ademas de hacer una comparacion directa para poder mandar un mensaje.
 {
     Console.WriteLine("El metodo EsLargo devolvio true por lo que el libro es laargo");
 }

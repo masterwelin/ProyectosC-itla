@@ -36,7 +36,7 @@ namespace PracticasModulo3.Ejercicio2
 
         public void MostrarInformacion()
         {
-            Console.WriteLine($"el libro tiene las siguientes informaciones:\nTitulo del libro: {Titulo}\nAutor:{Autor}\nCantidad de paginas:{Paginas}");
+            Console.WriteLine($"\nEl libro tiene las siguientes informaciones:\nTitulo del libro: {Titulo}\nAutor:{Autor}\nCantidad de paginas:{Paginas}\n");
         }
 
         public bool EsLargo()
